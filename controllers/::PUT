@@ -1,0 +1,14 @@
+//PUT
+
+$.ajax({
+	method: 'PUT',
+	data:{
+
+
+
+	}
+})
+
+
+
+
