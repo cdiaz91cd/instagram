@@ -4,9 +4,10 @@ body{
 
 .container-principal{
 	margin: auto;
-	width: 1200px;
-	height: 900px;
+	width: 1280px;
+	height: auto;
 	text-align: center;
+	background-color: #F1F1F1;
 
 }
 
@@ -15,21 +16,34 @@ body{
 	height: 50px;
 }
 
+.fotos{
+	background-color: white;
+	margin: 20px;
+	width: 700px;
+	padding: 20px;
+	 
+}
+
+.fav{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 100px;
+}
+
 .imagenes{
 	text-align: center;
 }
 
 .img1{ 
 	margin: auto;
-	background-color: #F1F1F1;
 	width: 900px;
 	height: auto;
 
 }
 
 
-.foto-universo{
-	width: 50%;
+.foto{
+	width: 500px;
 	height: auto;
 	display: block;
 	margin: auto;
@@ -37,20 +51,12 @@ body{
 }
 
 .foto-like{
-	width: 40px;
+	width: auto;
 	height: 40px;
-	display: block;
-	margin-left: 230px;
-
 }
 
 .likes{
 
 	font-size: 18px;
-	font-family: verdana;
-	background-color: pink;
-	width: 300px;	
-	margin: auto;
-
-
+	font-family: verdana;	
 }

@@ -1,39 +1,41 @@
-{{!--<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>--}}
-
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 	<title></title>
 </head>
+
 <body>
 	<div class="container-principal">
 
 		<div class="logo">
 			<img class="imagen-instagram" src="https://cdn.worldvectorlogo.com/logos/instagram-1.svg">
 		</div>
-		
+
 		<div class="imagenes">
 
 			<div class="img1">
-			{{#each fotos}}
-			<div>
-			<img class="foto-universo" src="{{this.img}}"/>
-			<img class="foto-like" data-id="{{this.id}}"src="{{this.corazon}}"/>
-			<p class="likes">{{this.likes}}</p>	
-			</div>
-			
-			{{/each}}
-			</div>
-		
+				{{#each fotos}}
+				<div class="fotos">
+					<img class="foto" src="{{this.img}}" />
+					<div class="fav">
+						<img class="foto-like" data-id="{{this.id}}" src="{{this.corazon}}" />
+						<p class="likes">{{this.likes}}</p>
+					</div>
+				</div>
 
+				{{/each}}
 			</div>
+
 
 		</div>
 
-	
+	</div>
+
+
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src="/javascripts/main.js"></script>
 </body>
+
 </html>
