@@ -32,14 +32,12 @@ let imagenes = [{
 
 
 self.home = function (req, res) {
-	console.log(imagenes);
 	res.render('index', {//lo que yo quiero mostrar en la pantalla
 		fotos: imagenes
 	})
 }
 
 self.like = function (req, res) {
-	console.log(req.body)
 
 	for (var i = 0; i < imagenes.length; i++) {
 		if (imagenes[i].id == req.body.id) {
@@ -52,7 +50,6 @@ self.like = function (req, res) {
 
 self.dynamic = function (req, res) {
 
-	console.log(req.params.id);
 	for (var i = 0; i < imagenes.length; i++) {
 		if (imagenes[i].id == req.params.id) {
 			res.render('dynamic', {

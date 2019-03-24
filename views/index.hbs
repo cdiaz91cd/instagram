@@ -3,25 +3,42 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-	<title></title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<title>Instagram</title>
 </head>
 
 <body>
 	<div class="container-principal">
-
-		<div class="logo">
-			<img class="imagen-instagram" src="https://cdn.worldvectorlogo.com/logos/instagram-1.svg">
+		<div class="main-menu">
+			<div class="logos">
+				<i class="fab fa-instagram"></i>
+				<span class="line"></span>
+				<img class="imagen-instagram" src="https://cdn.worldvectorlogo.com/logos/instagram-1.svg">
+			</div>
+			<div clas="Input">
+				<input placeholder="Buscar" />
+			</div>
+			<div class="icons">
+				<i class="far fa-bookmark"></i>
+				<i class="far fa-heart"></i>
+				<i class="far fa-user"></i>
+			</div>
 		</div>
-
 		<div class="imagenes">
-
 			<div class="img1">
 				{{#each fotos}}
 				<div class="fotos">
+					<div class="user">
+						<img class="image-user"
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5Xvh04JreYN-zbaiRMX2d9wC39wHeWsdUxKS9eTQNxLfDO2ww">
+						<div class="count-user">name.user</div>
+					</div>
 					<img class="foto" src="{{this.img}}" />
 					<div class="fav">
 						<img class="foto-like" data-id="{{this.id}}" src="{{this.corazon}}" />
-						<p class="likes">{{this.likes}}</p>
+						<p class="likes">{{this.likes}} Me gusta</p>
 					</div>
 				</div>
 

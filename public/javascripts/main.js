@@ -9,7 +9,6 @@ $('.foto-like').on('click', function () {
 			id: $(this).attr('data-id')
 		}
 	}).done(function (data) {
-		console.log(that);
 		that.siblings(".likes").html(data.likes)
 	});
 })
